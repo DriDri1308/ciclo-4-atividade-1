@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://a-static.mlcdn.com.br/450x450/quadro-decorativo-rick-and-morty-breaking-bad-desenho-com-moldura-vital-quadros/vitalquadrosdobrasil/809080480051/6475a27c54ed6a3cee5b7fd4929855bd.jpeg');
+    background-size: cover;
+    z-index: -1;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page-title {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 8px;
+    font-size: 16px;
+    width: 60%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.character-card {
+    position: relative;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s, border-color 0.5s;
+    cursor: pointer;
+    width: calc(30% - 20px); /* Ajuste o tamanho do card */
+    max-width: 150px; /* Limita o tamanho máximo do card */
+    margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
+}
+
+.character-card:hover {
+    background-color: #e9e9e9; /* Cor de destaque ao passar o mouse */
+    border-color: #007bff; /* Cor da borda ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.character-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.character-card h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.character-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#pagination-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#pagination-container button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#pagination-container button:hover {
+    background-color: #0056b3;
+}
+
+#page-info {
+    margin: 0 10px;
+}
